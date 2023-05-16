@@ -1,0 +1,29 @@
+ALGORITHM cards_num
+VAR
+    numbers=[]
+    leftPointer = 0
+    rightPointer =length(numbers) - 1
+    leftPointer <= rightPointer
+
+BEGIN
+    
+END
+    return numbers
+
+
+
+
+PROCEDURE organize (numbers)
+VAR
+    numbers=[]
+    leftPointer = 0
+    rightPointer =length(numbers) - 1
+    leftPointer <= rightPointer
+END
+        if numbers[leftPointer] > 0:
+            leftPointer += 1
+        else:
+            numbers[leftPointer], numbers[rightPointer] = numbers[rightPointer], numbers[leftPointer]
+            leftPointer += 1
+            rightPointer -= 1
+BEGIN
